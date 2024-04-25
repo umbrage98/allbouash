@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Webpage</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <style>
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #f9f9f9;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+button[type="submit"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #4CAF50;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button[type="submit"] img.logo {
+  height: 20px;
+  margin-right: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+      </style>
+
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="allbouash.png" alt="My logo" id="logo"> 
+        </a>
+        <div class="bar">
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="school.html">The School ↓</a>
+                        <ul class="submenu">
+                            <li><a href="school.html #who-we-are">Who we are</a></li>
+                            <li><a href="school.html #mission">Mission</a></li>
+                            <li><a href="school.html #vision">Vision</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="values.html">Our values</a></li>
+                    <li><a href="message.html">Message ↓</a>
+                      <ul class="submenu">
+                        <li><a href="message.html #message-from-chariman">Message from chairman</a></li>
+                        <li><a href="message.html #message-from-principal">Message from principal</a></li>
+                      </ul>
+                 </li>
+                    <li><a href="course.html">Courses ↓</a>
+                      <ul class="submenu">
+                        <li><a href="course.html">Science</a></li>
+                        <li><a href="management.html">Management</a></li>
+                        <li><a href="humanateis.html">Humanaties</a></li>
+                    </li>
+                    </ul>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="slider">
+        <div class="slide active">
+          <img src="school.jpg" alt="Image 1">
+          </div>
+        <div class="slide">
+          <img src="lab.jpg" alt="Image 2">
+          <div class="slide-description">
+            <h2>Computer Lab</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="hall.jpg" alt="Image 3">
+          <div class="slide-description">
+            <h2>Seminar Hall</h2>
+            </div>
+        </div>
+        <div class="slide">
+          <img src="library.jpg" alt="Image 4">
+          <div class="slide-description">
+            <h2>Library</h2>
+        </div>
+        </div>
+        <button class="slide-left">&lt;</button>
+        <button class="slide-right">&gt;</button>
+      </div>
+
+<!-- Who We Are Section -->
+<section id="our-team" class="team-two pb-100">
+  <div class="container">
+      <div class="section-title">
+          <h2>Who We Are</h2>
+          <div class="bar"></div>
+          <p>Here are some key points about us.</p>
+      </div>
+      <div class="row">
+          <div class="col-lg-6 col-md-6">
+              <div class="single-team">
+                  <div class="team-content">
+                      <h3>Our Mission</h3>
+                      <p>We ensure to provide quality education, benchmarked against international standards to cater to the full potential of the body, mind and spirit. Our learners are imparted skill-based knowledge through the framework of the latest curriculum, supplemented by modern approaches to teaching-learning pedagogy. We prioritize instilling in our learners, a sense of discipline, good moral values and character, accountability and responsibility towards contributing to a cleaner and greener planet, in addition to the development of the intellect, thereby upholding the essence of the school motto "LEAD KINDLY LIGHT".</p>
+                  </div>
+                  <button class="read-more"><a href="school.html">Read More</a></button>
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+              <div class="single-team">
+                  <div class="team-content">
+                      <h3>Our Vision</h3>
+                      <p>Our vision is to establish ourselves as a school of international repute imparting quality progressive education, with the aim to produce a community of young learners, endowed with rich human values and a keen sense of commitment, responsibility towards the community and society.</p>
+                  </div>
+                  <button class="read-more"><a href="school.html">Read More</a></button>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials-section pt-100 pb-70">
+  <div class="container">
+      <div class="section-title">
+          <h2>Testimonials</h2>
+          <div class="bar"></div>
+          <p>What our students say about us.</p>
+      </div>
+      <div class="testimonials-carousel owl-carousel owl-theme">
+          <div class="testimonials-item">
+              <div class="testimonials-content">
+                  <p>Allbouash is a prestigious institution that was designed to produce global change makers. I have had the opportunity to study in amazing institutions in India and USA after passing school and I can confidently say, Allbouash has a standard equal to its western counterparts. It also reminds me of teachers and mentors who pushed me to achieve things that I never felt were in my grasp. Looking back, I feel that even though I might have forgotten the theories and formulas my teachers taught me, I have memories which I will never forget. Life lessons and values that my Gurus Yog kumar yadav, Lok nath shrestha and Santosh Gaire have taught me, still heavily defines who I am and what I do till this date. I will be forever grateful to Allbouash.Thank you! </p>
+              </div>
+              <div class="testimonials-author">
+                  <h3>Jubin Rajbhandari</h3>
+                  <span>Missile Systems Engineer (US Department of Defense)</span>
+              </div>
+          </div>
+          <div class="testimonials-item">
+              <div class="testimonials-content">
+                  <p>I enrolled in Allbouash in 2008 BS as a student of Grade 1 and was a student here for 10years. The reasons I am grateful for attending the school are endless as it has made me become who I am today. This institution has taught me a great deal of teamwork, effective communication, being friendly, disciplined and well groomed.
+                    In this school, I was introduced to a lot of educational, sporting, and recreational opportunities. Besides studies, the teachers and administrators were very encouraging to take part in the extracurricular activities and also made sure that they were fun. It is a close-knit school and I am incredibly grateful for the many life-long friends I made from numerous backgrounds. My class was also one big family by the time we graduated.
+                    The faculty genuinely cares for each one of their students and wants to see them succeed not only academically but in all areas of their lives. As an alumni of the school, I can well assure families of upcoming students that their children are in the best hands with the teachers and the staff. I will forever be grateful for my time at GEMS, the faculty and students I met here, and the skills I acquired that have helped me get to where I am today.</p>
+              </div>
+              <div class="testimonials-author">
+                  <h3>Dr. Anuja Upadhyay
+                  </h3>
+                  <span>MBBS, MS ENT</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="parallax-section">
+  <div class="parallax-bg"></div>
+  <div class="parallax-content">
+      <div class="container">
+          <div class="parallax-text">
+              <h1>HOME OF</h1>
+              <p>THUNDERBOLTS</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<section id="founders-message">
+  <div class="container">
+      <div class="section-title">
+          <h2>Founder's Message</h2>
+          <div class="bar"></div>
+      </div>
+      <div class="founders-message-content">
+          <p>Welcome to Our School, where every child's potential is recognized and nurtured to its fullest extent. Our commitment to excellence in education is unwavering, and we strive to create an environment where students feel inspired to learn, explore, and grow.</p>
+          <p>At Our School, we believe in fostering not only academic achievement but also the development of well-rounded individuals. Our dedicated faculty members are passionate about providing a supportive and enriching educational experience that prepares students for success in an ever-changing world.</p>
+          <p>As the founder, I am proud of our school's accomplishments and the positive impact it has had on the lives of our students and the community. We invite you to join us on this journey of discovery and transformation, where every student is empowered to reach their full potential and become leaders of tomorrow.</p>
+      </div>
+  </div>
+</section>
+
+<section id="facilities">
+  <div class="container">
+      <div class="section-title">
+          <h2>Our Facilities</h2>
+          <div class="bar"></div>
+      </div>
+      <div class="facilities-content">
+          <div class="facility">
+              <img src="facality1.jpg" alt="Facility 1">
+              <h3>State-of-the-Art Labs</h3>
+              <p>Equipped with the latest technology to enhance learning experiences.</p>
+          </div>
+          <div class="facility">
+              <img src="facility2.jpg" alt="Facility 2">
+              <h3>Sports Facilities</h3>
+              <p>Various sports facilities to encourage physical activity and teamwork.</p>
+          </div>
+          <div class="facility">
+              <img src="facility3.jpg" alt="Facility 3">
+              <h3>Library</h3>
+              <p>A vast collection of books and resources to support academic growth.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+      <div class="footer-content">
+          <div class="contact-info">
+              <h3>Contact Us</h3>
+              <p>><span>&#x1F5FA;</span> ALLBOUASH academy</p>
+              <p>Dhapakhel, Lalitpur</p>
+              <p>Nepal</p>
+              <p><span>&#x260E;</span> Phone: +977-1-1234567</p>
+              <p><span>&#x2709;</span> Email: info@gems.edu.np</p>
+          </div>
+          <div class="upcoming-events">
+              <h3>Upcoming Events</h3>
+              <ul>
+                  <li>Orientaation program for newbie</li>
+                  <li>Welcome Program for Grade 11 students</li>
+                  <li>Talent Hunt-2024</li>
+              </ul>
+          </div>
+          <div class="dates-to-remember">
+              <h3>Dates to Remember</h3>
+              <ul>
+                  <li>04/22/2080-----New session started</li>
+                  <li>22/09/2080-----IOE topper from the school</li>
+                  <li>02/12/2081-----Farewell class 12</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+
+<footer>
+  <div class="content">
+    <p>Copyright © 2024 Allbouash. All rights reserved. <span>Prepared by : Sudip Bishwokarma</span></p>
+</div>
+</footer>
+
+
+<button id="openFormBtn">Admission Form for New Session</button>
+
+<div id="admissionForm" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Admission Form</h2>
+    <form id="admissionFormContent">
+      <div class="form-group">
+        <label for="studentName">Student's Name:</label>
+        <input type="text" id="studentName" name="studentName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="fatherName">Father's Name:</label>
+        <input type="text" id="fatherName" name="fatherName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="caste">Caste:</label>
+        <input type="text" id="caste" name="caste">
+      </div>
+
+      <div class="form-group">
+        <label for="occupation">Father's Occupation:</label>
+        <input type="text" id="occupation" name="occupation">
+      </div>
+
+      <div class="form-group">
+        <label for="qualification">Qualification:</label>
+        <input type="text" id="qualification" name="qualification">
+      </div>
+
+      <div class="form-group">
+        <label for="income">Family Income:</label>
+        <input type="number" id="income" name="income">
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+
+      <div class="form-group">
+        <label for="class">Class of Admission:</label>
+        <input type="text" id="class" name="class" required>
+      </div>
+
+      <div class="form-group">
+        <label for="tempAddress">Temporary Address:</label>
+        <textarea id="tempAddress" name="tempAddress" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="permAddress">Permanent Address:</label>
+        <textarea id="permAddress" name="permAddress" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit"><img src="esewa_logo.png" alt="eSewa Logo" class="logo">Pay from eSewa</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  
+
+      <script>
+        window.addEventListener("load", function() {
+    document.getElementById("admissionForm").style.display = "block";
+});
+
+document.getElementsByClassName("close")[0].addEventListener("click", function() {
+    document.getElementById("admissionForm").style.display = "none";
+});
+
+window.addEventListener("click", function(event) {
+    if (event.target == document.getElementById("admissionForm")) {
+        document.getElementById("admissionForm").style.display = "none";
+    }
+});
+
+
+              const logo = document.getElementById('logo'); 
+            logo.addEventListener('click', () => {
+                location.reload();
+                });
+
+            const slider = document.querySelector('.slider');
+            const slides = document.querySelectorAll('.slide');
+            const leftButton = document.querySelector('.slide-left');
+            const rightButton = document.querySelector('.slide-right');
+
+            let currentSlide = 0;
+
+            const goToSlide = (index) => {
+  slides.forEach((slide, i) => {
+    if (i === index) {
+      slide.classList.add('active');
+    } else {
+      slide.classList.remove('active');
+    }
+  });
+  currentSlide = index;
+};
+
+                const nextSlide = () => {
+                    if (currentSlide === slides.length - 1) {
+                    goToSlide(0);
+                    } else {
+                        goToSlide(currentSlide + 1);
+                        }
+                    };
+
+                const prevSlide = () => {
+                if (currentSlide === 0) {
+                goToSlide(slides.length - 1);
+                } else {
+                    goToSlide(currentSlide - 1);
+                }
+            };
+
+            rightButton.addEventListener('click', nextSlide);
+            leftButton.addEventListener('click', prevSlide);
+
+            setInterval(nextSlide, 7000);
+    </script>
+
+</body>
+</html>

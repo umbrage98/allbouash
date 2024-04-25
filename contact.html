@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.contain {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+
+<header class="header">
+    <a href="#" class="logo">
+        <img src="allbouash.png" alt="My logo" id="logo"> 
+    </a>
+    <div class="bar">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="school.html">The School ↓</a>
+                    <ul class="submenu">
+                        <li><a href="school.html #who-we-are">Who we are</a></li>
+                        <li><a href="school.html #mission">Mission</a></li>
+                        <li><a href="school.html #vision">Vision</a></li>
+                    </ul>
+                </li>
+                <li><a href="values.html">Our values</a></li>
+                <li><a href="message.html">Message ↓</a>
+                  <ul class="submenu">
+                    <li><a href="message.html #message-from-chariman">Message from chairman</a></li>
+                    <li><a href="message.html #message-from-principal">Message from principal</a></li>
+                  </ul>
+             </li>
+                <li><a href="course.html">Courses ↓</a>
+                  <ul class="submenu">
+                    <li><a href="course.html">Science</a></li>
+                    <li><a href="management.html">Management</a></li>
+                    <li><a href="humanateis.html">Humanaties</a></li>
+                </li>
+                </ul>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <div class="contain">
+        <h1>Contact Us</h1>
+        <form class="contact-form" action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>><span>&#x1F5FA;</span> ALLBOUASH academy</p>
+                    <p>Dhapakhel, Lalitpur</p>
+                    <p>Nepal</p>
+                    <p><span>&#x260E;</span> Phone: +977-1-1234567</p>
+                    <p><span>&#x2709;</span> Email: info@gems.edu.np</p>
+                </div>
+                <div class="upcoming-events">
+                    <h3>Upcoming Events</h3>
+                    <ul>
+                        <li>Orientaation program for newbie</li>
+                        <li>Welcome Program for Grade 11 students</li>
+                        <li>Talent Hunt-2024</li>
+                    </ul>
+                </div>
+                <div class="dates-to-remember">
+                    <h3>Dates to Remember</h3>
+                    <ul>
+                        <li>04/22/2080-----New session started</li>
+                        <li>22/09/2080-----IOE topper from the school</li>
+                        <li>02/12/2081-----Farewell class 12</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </footer>
+      
+      
+      
+      <footer>
+        <div class="content">
+          <p>Copyright © 2024 Allbouash. All rights reserved. <span>Prepared by : Sudip Bishwokarma</span></p>
+      </div>
+      </footer>
+
+
+      <script>
+              const logo = document.getElementById('logo'); 
+            logo.addEventListener('click', () => {
+                location.reload();
+                });
+    </script>
+
+</body>
+</html>
